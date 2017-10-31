@@ -11,10 +11,10 @@ def arm():
     print 'Display Armed!!!!' 
 
 def arm_with_self_level_on():
+    roll.set_servo(5,max_roll)  ## hold  aileron to right when arming or disarming.
     throttle.set_servo(13,min_throttle)  #set to zero
     yaw.set_servo(19,max_yaw)  # set to max  (full right yaw)
-    ## others to minimun
-    roll.set_servo(5,max_roll)  ## hold  aileron to right
+    ## others to minimum
     print 'SElf level on!!!'
     print 'Display Armed!!!!' 
     
