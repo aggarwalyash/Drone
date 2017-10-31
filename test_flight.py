@@ -44,3 +44,10 @@ def test_roll():
     x = raw_input("Enter throttle value: ")
     if(min_roll <= x and x<=max_roll):
         roll.set_servo(5,x)
+        
+        
+def set_to_middle():
+    roll.set_servo(5,middle_roll)# pin 29
+    pitch.set_servo(6,middle_pitch)# pin 31
+    throttle.set_servo(13,middle_throttle)# pin 33
+    yaw.set_servo(19,middle_yaw)# pin 35
